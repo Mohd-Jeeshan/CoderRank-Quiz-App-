@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Click1Activity">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/top2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/c_lang"
+        app:layout_constraintBottom_toBottomOf="@+id/topView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="   C-Language"
+        android:textColor="#53004E"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/topView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10:00"
+        android:textColor="#53004E"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginRight="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/topView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topView" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="1-C Programming was created in Year ___."
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="1972"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="1980"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1970"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2-Pointer is special kind of variable which is used to stored ___ of the variable."
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Value"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Address"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data Type"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="3-Pointer variable is declared using which one preceding ___ sign."
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="# Hash"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="$ Dollar"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="* Star"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="4-Set of consecutive memory locations is called as ____."
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Array"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Pointer"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loop"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="5-In Array,There is 1 to 1 correspondence between set of ___ and set of values."
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Memory"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Indices"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Range"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="6-In order to fetch the address of the variable we write preceding ___ sign before variable."
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Ampersand"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Comma"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Percent"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="7-In which header file is the NULL macro defined ?"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Stdio.h"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Math.h"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Conio.h"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="8-Smallest element of an array is called as."
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Upper"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Lower"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Range"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="9-Keyword is used to define an alternate name for an already existing data type?"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="default"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="static"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="typedef"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="10-The keyword typedef cannot be used to give alias names to pointers.?"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="True"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="False"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="None"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="11-What is the sizeof (char) in a 32-bit C compiler?"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="1 Byte"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="8 Bit"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Both"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="12-Output justification such as decimal point, numerical sign, and octal are specified."
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Flags"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Decimal"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="None"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="13-What symbol is used to Left-justify within the data given field width?"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="- (Minus)"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="+ (Plus)"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="# (Hash)"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="14-The maximum number of characters to be printed is specified by ___"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Precision"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Flags"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Width"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="15-Which of the following is not a basic data type in 'C' language?."
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Int"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Array"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Double"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="16-What error will be generated on using incorrect specifier for the data type?"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Run-time error"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="No error"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="None"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="17-scanf() is a predefined function in______header file"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Stdlib.h"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Stdio.h"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Math.h"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="18-Maximum value of an unsigned integer is"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="65535"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="32767"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-32767"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="19-Which is responsible for conversion of C programs to machine language"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Compiler"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Editor"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB57"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OS"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="20-By default a real number is treated as a"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Float"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB59"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Double"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Int"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_marginTop="30dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bottonview1"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textSize="19dp"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"
+                android:textColor="#731A6D" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

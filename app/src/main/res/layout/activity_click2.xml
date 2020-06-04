@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Click2Activity">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/top2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/data_structure"
+        app:layout_constraintBottom_toBottomOf="@+id/topView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="   Algorithm"
+        android:textColor="#53004E"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/topView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10:00"
+        android:textColor="#53004E"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginRight="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/topView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topView" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="1-Time that depend on the input: an already sorted sequence that is easier to sort."
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Process"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Input"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Running"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2-When an algorithm is written in the form of a programming language, it becomes a ___"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="FlowChart"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Program"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Syntax"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="3-A system wherein items are added from one and removed from the other end."
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Stack"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Queue"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Array"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="4-What is another name of 1 Dimensional arrays."
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Linear Array"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="List"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Queue"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="5-A data structure that follows the FIFO principle."
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Queue"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Stack"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Union"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="6-We can say algorithm is a program its true."
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="True"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="False"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="None"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="7-Which one is not a stable sorting algorithm in its typical implementation."
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Quick Sort"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Heap"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Merge Sort"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="8-What is the best time complexity of bubble sort?"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="NlogN"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="N^2"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="9-Which of the following sorting algorithms has the lowest worst-case complexity?"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Merge Sort"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Quick Sort"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Heap"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="10-Which sorting algorithms is most efficient to sort string consisting of ASCII characters?"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Counting Sort"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Merge"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Heap"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="11-Which one algorithm is Not a divide and conquer algorithm by nature?"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Merge Sort"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Heap"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quick Sort"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="12-What is the time complexity of Huffman Coding?"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="O(NlogN)"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="O(N^2)"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="O(N)"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="13-A flowchart that outlines the main segments of a program."
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Union"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Queue"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Macro"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="14-The solution of the recurrence relation T(m) = T( 3m / 4) + 1 is :"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="θ (lg m)"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="θ (m)"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="θ (mlg m)"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="15-Which of the following is not a flowchart structure?"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Case"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Process"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sequence"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="16-Which of the following data structure is useful in traversing a given graph by breadth first search?"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Queue"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Stack"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="List"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="17- A ___ is a directed graph that describes the flow of execution control of the program."
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="FlowGraph"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Algo"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FlowChart"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="18-Which of the following is a loop statement?"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="While"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Do"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Switch"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="19-The number of values a function can return at a time?"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="One"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Zero"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB57"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Multiple"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="20-The chart that contains only function flow and no code is called as"
+                android:textColor="#53004E"
+                android:justificationMode="inter_word"
+                android:textSize="17dp" />
+            <RadioGroup
+                android:id="@+id/radioG20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioB58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="FlowChart"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB59"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Struct Chart"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/radioB60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="None"
+                    android:textColor="#53004E"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_marginTop="30dp"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bottonview1"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textSize="19dp"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"
+                android:textColor="#731A6D" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
